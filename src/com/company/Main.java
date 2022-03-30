@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	// Class work
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input temperature: ");
         int temperature = scanner.nextInt();
@@ -19,10 +19,10 @@ public class Main {
             activity = "Tennis";
         } else if (temperature >= 40) {
             activity = "Golf";
-        } else if (temperature < 40) {
+        } else {
             activity = "Skiing";
         }
 
-        System.out.println("Suggested activity: " + activity);
+        System.out.println("The right activity for this temperature is: " + activity);
         }
     }
