@@ -11,9 +11,12 @@ public class Main {
         System.out.println("Please input temperature: ");
         int temperature = scanner.nextInt();
 
+
         String activity = null;
 
-        if (temperature >= 80) {
+        if (temperature > 95 || temperature < 20) {
+            activity = "Visit our shops!";
+        } else if (temperature >= 80) {
             activity = "Swimming";
         } else if (temperature >= 60) {
             activity = "Tennis";
